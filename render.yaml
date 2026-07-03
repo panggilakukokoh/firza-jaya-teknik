@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: links-site
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: BLUEPACK_API_KEY
+        value: bluepack_da5a739d445888c90f8ec3ed59bef0bb8d248034b5a2c670
+      - key: API_PROVIDER
+        value: bluepack
+      - key: CLAUDE_MODEL
+        value: claude-3-5-sonnet-latest

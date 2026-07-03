@@ -1,0 +1,13 @@
+{
+  "name": "openrouter-vscode-sample",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test:api": "node index.js",
+    "test:bluepack": "node bluepack-test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
